@@ -5,11 +5,11 @@ import ExpensesFilter from './ExpensesFilter';
 
 function Expenses(props) {
   const saveExpensesHandler = (year) => {
-    const newExpenses = props.expenses.filter(
+    let newExpenses = props.originalExpenses.filter(
       (expense) => String(expense.date.getFullYear()) === year
     );
-
-    props.onFilterExpenses(newExpenses);
+    console.log(newExpenses);
+    props.onFilter(newExpenses);
   };
 
   return (
