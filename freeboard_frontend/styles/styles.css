@@ -1,0 +1,105 @@
+.wrap {
+  margin: 4vh auto 0;
+  width: 40vw;
+  height: 140vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+  width: 90%;
+}
+
+.writer-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+.writer-information .name {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.writer-information .password {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.title-group {
+  margin-bottom: 3vh;
+}
+
+.title-group input {
+  width: 100%;
+}
+
+.content-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+
+.content-group textarea {
+  width: 100%;
+}
+
+.address-information {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+
+.address-information > div > * {
+  height: 3vh;
+}
+
+.address-information > div > button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.upload-group {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+.upload-group button {
+  background-color: rgb(178, 178, 178);
+  border: none;
+  width: 9vh;
+  height: 9vh;
+}
+
+.upload-group button span {
+  font-size: 2.5vh;
+}
+
+.youtube-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+
+.setting-group {
+  margin-bottom: 3vh;
+}
+
+.form-group > .button-container > button {
+  width: 10vh;
+  height: 6vh;
+  background-color: rgb(255, 221, 0);
+  border: none;
+}
+
+.button-container {
+  text-align: center;
+}
