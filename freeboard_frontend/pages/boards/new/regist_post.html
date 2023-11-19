@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>게시물 등록</title>
+    <link rel="stylesheet" href="../../../styles/styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>게시물 등록</h1>
+      <form class="form-group">
+        <div class="writer-information">
+          <div class="name">
+            <span style="margin-bottom: 1vh">작성자</span>
+            <input
+              type="text"
+              placeholder="이름을 적어주세요."
+              style="height: 3vh"
+            />
+          </div>
+          <div class="password">
+            <span style="margin-bottom: 1vh">비밀번호</span>
+            <input
+              type="text"
+              placeholder="비밀번호를 입력해주세요."
+              style="height: 3vh"
+            />
+          </div>
+        </div>
+        <div class="title-group">
+          <label for="name" style="display: block; margin-bottom: 1vh"
+            >제목</label
+          >
+          <input
+            type="text"
+            id="name"
+            placeholder="제목을 작성해주세요."
+            style="height: 3vh"
+          />
+        </div>
+        <div class="content-group">
+          <label for="content" style="margin-bottom: 1vh">내용</label>
+          <textarea
+            id="content"
+            placeholder="내용을 작성해주세요."
+            style="height: 20vh"
+          ></textarea>
+        </div>
+        <div class="address-information">
+          <label for="zip" style="margin-bottom: 1vh">주소</label>
+          <div style="margin-bottom: 1vh">
+            <input type="text" id="zip" placeholder="07250" />
+            <button type="button" style="height: 4vh">우편번호 검색</button>
+          </div>
+          <input type="text" style="margin-bottom: 1vh; height: 3vh" />
+          <input type="text" style="height: 3vh" />
+        </div>
+        <div class="youtube-group">
+          <label for="link" style="margin-bottom: 1vh">유튜브</label>
+          <input
+            type="text"
+            id="link"
+            placeholder="링크를 복사해주세요."
+            style="height: 3vh"
+          />
+        </div>
+        <div class="picture-attach-grouop">
+          <label style="display: block; margin-bottom: 1vh">사진 첨부</label>
+          <div class="upload-group">
+            <button type="button"><span>+</span><br />Upload</button>
+            <button type="button"><span>+</span><br />Upload</button>
+            <button type="button"><span>+</span><br />Upload</button>
+          </div>
+        </div>
+        <div class="setting-group">
+          <label style="display: block; margin-bottom: 1vh">메인 설정</label>
+          <div class="setting-input">
+            <input type="radio" name="method" value="upload" /> 업로드
+            <input type="radio" name="method" value="picture" /> 사진
+          </div>
+        </div>
+        <div class="button-container">
+          <button type="submit">등록하기</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
